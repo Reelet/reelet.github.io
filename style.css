@@ -150,8 +150,8 @@ footer span:last-child{display:flex;gap:24px}
 :root{color:#080a0b;background:#faf9f6}
 .wrap{width:min(1420px,calc(100% - 128px))}
 .topbar{height:114px;border-bottom-color:#17171716}
-.wordmark{display:block;width:215px;line-height:0}
-.wordmark img{display:block;width:100%;height:auto}
+.wordmark{display:inline-flex;align-items:center;gap:12px;width:auto;color:#080a0b;font-size:46px;font-weight:800;letter-spacing:-.075em;line-height:1;white-space:nowrap}
+.wordmark img{display:block;width:62px;height:62px;flex:none;border-radius:12px}
 .topbar nav{gap:40px;color:#202326;font-size:16px}
 .mobile-menu{display:none}
 .hero{background:radial-gradient(circle at 78% 54%,#f4f3ee 0,#faf9f6 54%,#faf9f6 100%)}
@@ -169,8 +169,8 @@ footer span:last-child{display:flex;gap:24px}
 .window-dots i{width:12px;height:12px}
 .app-body{height:calc(100% - 36px)}
 .app-sidebar{width:29%;background:#f5f7f6;padding:17px 11px}
-.side-brand{display:block;margin:0 5px 20px;line-height:0}
-.side-brand img{display:block;width:min(138px,100%);height:auto}
+.side-brand{display:flex;align-items:center;gap:7px;margin:0 5px 20px;color:#080a0b;font-size:22px;font-weight:800;letter-spacing:-.065em;line-height:1;white-space:nowrap}
+.side-brand img{display:block;width:40px;height:40px;flex:none;border-radius:8px}
 .side-item{height:39px;font-size:12px}
 .side-item.selected{background:#dcf2f0;color:#007e77}
 .queue-panel{padding:26px 22px}
@@ -201,7 +201,8 @@ footer{border-top-color:#17171718}
 @media(max-width:780px){
   .wrap{width:min(100% - 44px,680px)}
   .topbar{height:92px}
-  .wordmark{width:177px}
+  .wordmark{gap:10px;font-size:39px}
+  .wordmark img{width:54px;height:54px;border-radius:11px}
   .hero-inner{display:block;min-height:0;padding-top:70px;padding-bottom:58px}
   .hero h1{font-size:clamp(51px,8vw,72px)}
   .hero-copy>p:not(.platform){font-size:22px;margin-top:24px}
@@ -215,7 +216,8 @@ footer{border-top-color:#17171718}
 @media(max-width:520px){
   .wrap{width:calc(100% - 36px)}
   .topbar{height:88px}
-  .wordmark{width:157px}
+  .wordmark{gap:9px;font-size:34px}
+  .wordmark img{width:50px;height:50px;border-radius:10px}
   .desktop-nav{display:none!important}
   .mobile-menu{display:block;position:relative}
   .mobile-menu summary{display:flex;flex-direction:column;justify-content:space-between;width:31px;height:24px;cursor:pointer;list-style:none}
@@ -234,8 +236,8 @@ footer{border-top-color:#17171718}
   .window-bar{height:25px}
   .app-body{height:calc(100% - 25px)}
   .app-sidebar{width:30%;padding:9px 5px}
-  .side-brand{margin:0 2px 8px}
-  .side-brand img{width:86px}
+  .side-brand{gap:4px;margin:0 2px 8px;font-size:14px}
+  .side-brand img{width:24px;height:24px;border-radius:5px}
   .side-item{height:25px;font-size:9px}
   .queue-panel{padding:10px 7px}
   .queue-heading{margin-bottom:8px}
