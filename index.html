@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f8f6f1">
-  <meta name="description" content="Reelet is a floating video player for YouTube playlists and local files on your Mac.">
-  <link rel="icon" href="favicon.png?v=5" type="image/png" sizes="128x128">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=5">
+  <meta name="theme-color" content="#10191b">
+  <meta name="description" content="Reelet keeps YouTube videos, local files, and radio in one Mac player with a floating video window.">
+  <link rel="icon" href="favicon.png?v=6" type="image/png" sizes="128x128">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png?v=6">
   <title>Reelet — Keep watching. Keep doing.</title>
-  <link rel="stylesheet" href="style.css?v=owl-brand-5">
+  <link rel="stylesheet" href="style.css?v=owl-brand-6">
 </head>
 <body class="home">
   <header class="topbar wrap">
-    <a class="wordmark" href="./" aria-label="Reelet home"><img src="favicon.png?v=5" alt="" width="62" height="62"><span>Reelet</span></a>
+    <a class="wordmark" href="./" aria-label="Reelet home"><img src="favicon.png?v=6" alt="" width="54" height="54"><span>Reelet</span></a>
     <nav class="desktop-nav" aria-label="Main navigation"><a href="#features">Features</a><a href="privacy.html">Privacy</a><a href="https://github.com/Reelet/reelet">Source</a></nav>
     <details class="mobile-menu"><summary aria-label="Open menu"><span></span><span></span><span></span></summary><nav aria-label="Mobile navigation"><a href="#features">Features</a><a href="privacy.html">Privacy</a><a href="https://github.com/Reelet/reelet">Source</a></nav></details>
   </header>
@@ -20,42 +20,51 @@
     <section class="hero">
       <div class="hero-inner wrap">
         <div class="hero-copy">
-          <h1>Keep watching.<br>Keep doing.</h1>
-          <p>A floating video player for YouTube playlists and files on your Mac.</p>
+          <div class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> Video and radio on your Mac</div>
+          <h1>Keep watching.<br><em>Keep doing.</em></h1>
+          <p>Bring your YouTube lists and local videos together. Keep a video in view while you use other apps.</p>
           <div class="actions">
             <a class="button" href="https://github.com/Reelet/reelet">View on GitHub <span aria-hidden="true">↗</span></a>
             <a class="textlink" href="#features">Explore features <span aria-hidden="true">→</span></a>
           </div>
+          <p class="platform">Made for macOS</p>
         </div>
-        <div class="product-scene" role="img" aria-label="Illustration of Reelet's video queue with a separate floating player">
-          <div class="app-window">
-            <div class="window-bar"><span class="window-dots"><i></i><i></i><i></i></span><span>Reelet</span></div>
-            <div class="app-body">
-              <div class="app-sidebar">
-                <div class="side-brand"><img src="favicon.png?v=5" alt="" width="40" height="40"><span>Reelet</span></div>
-                <div class="side-item selected">▷ &nbsp; Queue</div><div class="side-item">▣ &nbsp; YouTube</div><div class="side-item">▱ &nbsp; Local files</div>
-                <div class="side-rule"></div><div class="side-label">PLAYLISTS</div>
-                <div class="side-item">♫ &nbsp; Coast</div><div class="side-item">♫ &nbsp; Focus</div><div class="side-item">♫ &nbsp; Travel</div>
-                <div class="side-rule"></div><div class="side-item">◷ &nbsp; Recent</div>
+        <div class="product-scene" role="img" aria-label="Reelet app preview: dark queue with Recent, Radio, Playlists, and YouTube lists, plus a separate floating video player">
+          <div class="scene-glow" aria-hidden="true"></div>
+          <div class="app-window" aria-hidden="true">
+            <div class="app-sidebar">
+              <div class="traffic-lights"><i></i><i></i><i></i></div>
+              <div class="side-item"><span class="side-symbol">◷</span>Recent</div>
+              <div class="side-item"><span class="side-symbol">◉</span>Radio</div>
+              <div class="side-label">Playlists <span>⌄</span></div>
+              <div class="side-item selected"><span class="side-symbol">≡</span>Queue <span class="playing-bars"><i></i><i></i><i></i></span></div>
+              <div class="side-item"><span class="side-symbol">♫</span>Temp</div>
+              <div class="side-label">YouTube <span>⌄</span></div>
+              <div class="side-item"><span class="side-symbol">♧</span>New Subs</div>
+              <div class="side-item"><span class="side-symbol">♡</span>Liked</div>
+              <div class="side-item"><span class="side-symbol">▣</span>My Playlist</div>
+            </div>
+            <div class="queue-panel">
+              <div class="queue-heading"><strong>Queue</strong><span class="add-video">＋</span></div>
+              <div class="queue-rows">
+                <div class="queue-row playing"><span class="row-number">1</span><span class="queue-thumb coast"></span><span class="queue-title">Coastal drive</span><span class="queue-channel">Sample channel</span><span class="queue-length">12:48</span><span class="source-icon">▣</span></div>
+                <div class="queue-row"><span class="row-number">2</span><span class="queue-thumb dusk"></span><span class="queue-title">Evening light</span><span class="queue-channel">Sample channel</span><span class="queue-length">08:32</span><span class="source-icon">▣</span></div>
+                <div class="queue-row"><span class="row-number">3</span><span class="queue-thumb film"></span><span class="queue-title">Weekend film.mp4</span><span class="queue-channel"></span><span class="queue-length">21:05</span><span class="source-icon">▤</span></div>
+                <div class="queue-row"><span class="row-number">4</span><span class="queue-thumb ocean"></span><span class="queue-title">Open water</span><span class="queue-channel">Sample channel</span><span class="queue-length">16:17</span><span class="source-icon">▣</span></div>
               </div>
-              <div class="queue-panel">
-                <div class="queue-heading"><div><strong>Your queue</strong><small>4 videos</small></div><span class="add-video">＋ Add video</span></div>
-                <div class="queue-row playing"><span class="play-indicator">▶</span><span class="queue-thumb coast"></span><span class="queue-title">Coastal drive<small>YouTube</small></span><span class="row-more">⋮</span></div>
-                <div class="queue-row"><span class="play-indicator"></span><span class="queue-thumb twilight"></span><span class="queue-title">Clouds over the valley<small>YouTube</small></span><span class="row-more">⋮</span></div>
-                <div class="queue-row"><span class="play-indicator"></span><span class="queue-thumb night"></span><span class="queue-title">Night train<small>Local video</small></span><span class="row-more">⋮</span></div>
-                <div class="queue-row"><span class="play-indicator"></span><span class="queue-thumb rose"></span><span class="queue-title">A quiet morning<small>YouTube</small></span><span class="row-more">⋮</span></div>
-              </div>
+              <div class="app-player-bar"><span class="bar-transport">◀&nbsp;&nbsp; ▶&nbsp;&nbsp; ▶|</span><span class="bar-now"><span class="bar-cover"></span><span>Coastal drive<small>Queue</small></span></span><span class="bar-actions">▣ &nbsp; ◎ &nbsp; ◖))</span></div>
             </div>
           </div>
-          <div class="floating-player"><span class="player-dots"><i></i><i></i><i></i></span><img src="assets/coastal-video.webp" alt="" width="1672" height="939"><div class="player-controls"><span><strong>Coastal drive</strong><small>Now playing</small></span><span class="transport">◀ &nbsp; ❚❚ &nbsp; ▶</span><span class="picture-icon">▣</span></div></div>
+          <div class="floating-player" aria-hidden="true"><img src="assets/coastal-video.webp" alt="" width="1672" height="941"><div class="video-shade"></div><div class="video-controls"><span>×</span><span>↶15 &nbsp; ❚❚ &nbsp; 15↷</span><span>⛶</span></div><div class="video-progress"><i></i></div></div>
+          <span class="scene-caption">App preview · sample video titles</span>
         </div>
       </div>
     </section>
     <section id="features" class="features wrap" aria-label="Features">
-      <article><svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><rect x="4" y="8" width="32" height="29" rx="5"/><rect x="19" y="20" width="32" height="29" rx="5"/></svg><div><h2>Floating player</h2><p>Keep the video in view while you work.</p></div></article>
-      <article><svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><rect x="5" y="8" width="8" height="8" rx="2"/><rect x="5" y="24" width="8" height="8" rx="2"/><rect x="5" y="40" width="8" height="8" rx="2"/><path d="M22 12h29M22 28h29M22 44h29"/></svg><div><h2>YouTube playlists</h2><p>See and manage YouTube playlists alongside local files.</p></div></article>
-      <article><svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 16a5 5 0 0 1 5-5h13l5 6h20a5 5 0 0 1 5 5v22a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/></svg><div><h2>Local files</h2><p>Play videos from your Mac.</p></div></article>
-      <article><svg viewBox="0 0 56 56" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M8 14h40M8 28h40M8 42h40"/><circle cx="22" cy="14" r="5" fill="#f8f6f1"/><circle cx="37" cy="28" r="5" fill="#f8f6f1"/><circle cx="18" cy="42" r="5" fill="#f8f6f1"/></svg><div><h2>Built for macOS</h2><p>A native app for your Mac.</p></div></article>
+      <article><span class="feature-icon">▣</span><div><h2>Floating player</h2><p>Keep your video in view when you return to the queue or another app.</p></div></article>
+      <article><span class="feature-icon">▤</span><div><h2>YouTube playlists</h2><p>See New Subs, Liked, and your YouTube playlists in one place.</p></div></article>
+      <article><span class="feature-icon">▶</span><div><h2>Local video</h2><p>Drop in videos from your Mac and keep them in local playlists.</p></div></article>
+      <article><span class="feature-icon">♫</span><div><h2>Radio</h2><p>Save radio stations and play them from your lists.</p></div></article>
     </section>
   </main>
   <footer class="wrap"><span>© 2026 Reelet</span><span><a href="privacy.html">Privacy</a><a href="mailto:h@kor.nz">Contact</a><a href="https://github.com/Reelet/reelet">GitHub</a></span></footer>
